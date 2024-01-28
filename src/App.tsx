@@ -2,6 +2,7 @@ import './App.css';
 import Footer from './components/footer/Footer';
 import Header from './components/head/Header';
 import Search from './components/searchField/Search';
+import StudentsResult from './components/student/StudentsResult';
 
 function App() {
 
@@ -22,7 +23,9 @@ function App() {
           </div>
 
           {/* table content */}
-          
+          <div>
+              <StudentsResult/>
+          </div>
 
           {/* tail / footer */}
           <div>
