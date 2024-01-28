@@ -37,7 +37,7 @@ const StudentsResult = () => {
   }, []);
 
     return (
-        <div className="max-w-[848px] mx-auto overflow-auto text-white">
+        <div className="max-w-[848px] mx-auto overflow-hidden text-white">
             <table className="w-full">
                 <thead>
                     <tr className="border-b border-[#FFFFFF0D]">

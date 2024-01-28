@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className=''>
-      <div>
+      <div className=''>
         {/* header */}
         <Header />
         {/* body */}
