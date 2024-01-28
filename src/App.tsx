@@ -12,7 +12,7 @@ function App() {
         {/* header */}
         <Header />
         {/* body */}
-        <div className='bg-slate-800 py-24 lg:pt-[120px] lg:pb-28'>
+        <div className='bg-slate-900 py-24 lg:pt-[120px] lg:pb-28'>
           <div className="mb-16 flex flex-col items-center">
             <h2 className="text-3xl lg:text-[40px] mb-9 font-bold text-white">
               <span className="text-[#00CC8C]">Students</span> of the Year
@@ -22,7 +22,7 @@ function App() {
           </div>
 
           {/* table content */}
-          <div>
+          <div className='px-4'>
               <StudentsResult/>
           </div>
 
