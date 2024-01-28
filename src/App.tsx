@@ -11,7 +11,6 @@ function App() {
       <div>
         {/* header */}
         <Header />
-
         {/* body */}
         <div className='bg-slate-800 py-24 lg:pt-[120px] lg:pb-28'>
           <div className="mb-16 flex flex-col items-center">
@@ -28,7 +27,7 @@ function App() {
           </div>
 
           {/* tail / footer */}
-          <div>
+          <div className='pt-10'>
             <Footer />
           </div>
         </div>

@@ -18,16 +18,20 @@ const StudentsResult = () => {
   const [classesData, setClassesData] = useState<ClassData[]>([]);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch('/src/assets/data.json');
-        const data = await res.json();
-        console.log(data);
-        setClassesData(data.classes);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
+      const fetchData = async () =>
+      {
+          try
+          {
+              const res = await fetch( '/src/assets/data.json' );
+              const data = await res.json();
+              console.log( data );
+              setClassesData( data.classes );
+          }
+          catch ( error )
+          {
+              console.error( 'Error fetching data:', error, error.message );
+          }
+      };
 
     fetchData();
   }, []);
