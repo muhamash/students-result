@@ -1,14 +1,10 @@
-import React from 'react';
 import CustomButton from '../buttons/Button';
 
 const Nav = () => {
     return (
-        <div>
+        <div className='container mx-auto flex items-center justify-between gap-x-6'>
             <div>
-                <div>
-                    
-                </div>
-                <div></div>
+                <img className="h-[40px]" src="/src/assets/lws.svg" alt="logo?" />
             </div>
             <div>
                 <CustomButton name='Get admission' bgColor='bg-black'/>

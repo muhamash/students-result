@@ -9,7 +9,7 @@ const CustomButton = (props:ButtonProps ) =>
     const { name, bgColor } = props;
     return (
         <button
-            className={`${bgColor} px-4 py-2 text-white text-[16px] rounded-xl`}>
+            className={`${bgColor} px-5 py-2 text-white text-[16px] rounded-[44px]`}>
             {name}
         </button>
     );
