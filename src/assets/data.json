@@ -1,7 +1,7 @@
 {
     "classes": [
         {
-            "name": "Class One",
+            "name": "Class JavaScript",
             "students": [
                 {
                     "id": 1,
@@ -24,7 +24,7 @@
             ]
         },
         {
-            "name": "Class Two",
+            "name": "Class Cpp",
             "students": [
                 {
                     "id": 1,
