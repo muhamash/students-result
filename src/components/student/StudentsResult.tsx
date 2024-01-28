@@ -14,27 +14,30 @@ interface ClassData {
   students: Student[];
 }
 
-const StudentsResult = () => {
-  const [classesData, setClassesData] = useState<ClassData[]>([]);
+const StudentsResult = () =>
+{
+    const [ classesData, setClassesData ] = useState<ClassData[]>( [] );
 
-  useEffect(() => {
-      const fetchData = async () =>
-      {
-          try
-          {
-              const res = await fetch( '/src/assets/data.json' );
-              const data = await res.json();
-              console.log( data );
-              setClassesData( data.classes );
-          }
-          catch ( error )
-          {
-              console.error( 'Error fetching data:', error, error.message );
-          }
-      };
+    // fetching data
+    useEffect( () =>
+    {
+        const fetchData = async () =>
+        {
+            try
+            {
+                const res = await fetch( '/src/assets/data.json' );
+                const data = await res.json();
+                console.log( data );
+                setClassesData( data.classes );
+            }
+            catch ( error )
+            {
+                console.error( 'Error fetching data:', error, error.message );
+            }
+        };
 
-    fetchData();
-  }, []);
+        fetchData();
+    }, [] );
 
     return (
         <div className="max-w-[848px] mx-auto overflow-hidden text-white">
@@ -54,16 +57,31 @@ const StudentsResult = () => {
                         <React.Fragment key={index}>
                             {/* student table cells */}
                             <ClassRow className="bg-white/5" name={classData.name} />
-                            {classData.students.map( ( student ) => (
-                                //   students data
-                                <StudentsRow
-                                    key={student.id}
-                                    id={student.id}
-                                    name={student.name}
-                                    grade={student.grade}
-                                    percentage={student.percentage}
-                                />
-                            ) )}
+                            {/* dynamic sorted data based on grade */}
+                            {classData.students.sort( ( a, b ) =>
+                                {
+                                    const gradeOrder: Record<string, number> = {
+                                        "A+": 1,
+                                        "A": 2,
+                                        "A-": 3,
+                                        "B": 4,
+                                        "C": 5,
+                                        "D": 6,
+                                        "E": 7,
+                                        "F": 99
+                                    };
+
+                                    return gradeOrder[ a.grade ] - gradeOrder[ b.grade ];
+                                } )
+                                .map( ( student ) => (
+                                    <StudentsRow
+                                        key={student.id}
+                                        id={student.id}
+                                        name={student.name}
+                                        grade={student.grade}
+                                        percentage={student.percentage}
+                                    />
+                                ) )}
                         </React.Fragment>
                     ) )}
                 </tbody>
