@@ -1,0 +1,50 @@
+{
+    "classes": [
+        {
+            "name": "Class One",
+            "students": [
+                {
+                    "id": 1,
+                    "name": "Alice",
+                    "grade": "A",
+                    "percentage": "92%"
+                },
+                {
+                    "id": 2,
+                    "name": "Bob",
+                    "grade": "B+",
+                    "percentage": "85%"
+                },
+                {
+                    "id": 3,
+                    "name": "Charlie",
+                    "grade": "A-",
+                    "percentage": "89%"
+                }
+            ]
+        },
+        {
+            "name": "Class Two",
+            "students": [
+                {
+                    "id": 1,
+                    "name": "David",
+                    "grade": "B",
+                    "percentage": "78%"
+                },
+                {
+                    "id": 2,
+                    "name": "Eva",
+                    "grade": "A+",
+                    "percentage": "95%"
+                },
+                {
+                    "id": 3,
+                    "name": "Frank",
+                    "grade": "B-",
+                    "percentage": "82%"
+                }
+            ]
+        }
+    ]
+}
