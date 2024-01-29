@@ -23,7 +23,7 @@
                 },
                 {
                     "id": 300,
-                    "name": "Charlie Hockings",
+                    "name": "Hockings",
                     "grade": "A+",
                     "percentage": "89%"
                 }
@@ -40,7 +40,7 @@
                 },
                 {
                     "id": 301,
-                    "name": "Charlie Hossain",
+                    "name": "Hossain",
                     "grade": "A-",
                     "percentage": "89%"
                 },
