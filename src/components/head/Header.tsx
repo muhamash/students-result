@@ -12,7 +12,7 @@ const Header = () =>
                 <div className="grid md:grid-cols-2 items-center w-10/12 mx-auto py-10">
                     <img
                         className="md:order-2 object-cover ml-auto animate-updown"
-                        src="/src/assets/hero.svg"
+                        src="hero.svg"
                         width="500px"
                         height="500px"
                         alt="Banner"

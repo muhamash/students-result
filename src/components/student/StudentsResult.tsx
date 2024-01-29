@@ -25,7 +25,7 @@ const StudentsResult = () =>
         {
             try
             {
-                const res = await fetch( '/src/assets/data.json' );
+                const res = await fetch( 'data.json' );
                 const data = await res.json();
                 console.log( data );
                 setClassesData( data.classes );
