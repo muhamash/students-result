@@ -32,7 +32,7 @@ const StudentsResult = () =>
             }
             catch ( error )
             {
-                console.error( 'Error fetching data:', error, error.message );
+                console.error( 'Error fetching data:', error);
             }
         };
 
