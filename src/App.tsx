@@ -27,7 +27,7 @@ function App() {
           </div>
 
           {/* tail / footer */}
-          <div className='pt-10'>
+          <div className='pt-10 px-3'>
             <Footer />
           </div>
         </div>
