@@ -22,7 +22,7 @@ function App() {
           </div>
 
           {/* table content */}
-          <div className='px-4'>
+          <div className='px-2'>
               <StudentsResult/>
           </div>
 
